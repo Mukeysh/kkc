@@ -1,0 +1,37 @@
+.card {
+  .card--content {
+    background: $color-white;
+    padding: 20px;
+  }
+  .card--count {
+    border: 1px solid $color-gray01;
+    background: $color-gray02;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.card-v {
+  display: flex;
+  flex-direction: column;
+  .card--content {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    img {
+      margin-right: 20px;
+    }
+  }
+}
+
+.card-h {
+  .card--content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+}

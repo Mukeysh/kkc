@@ -1,0 +1,15 @@
+.nav {
+  margin-right: 15px;
+  .nav--list {
+    display: flex;
+  }
+  .nav--item {
+    margin-right: 15px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  .nav--link {
+    padding: 0 10px;
+  }
+}

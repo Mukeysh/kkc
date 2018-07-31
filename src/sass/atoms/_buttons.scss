@@ -1,0 +1,54 @@
+/********** atoms buttons *************/
+.btn {
+  background: $color-red;
+  min-height: 64px;
+  min-width: 186px;
+  padding: 0 10px;
+  text-align: center;
+  display: inline-block;
+  line-height: 63px;
+  font-size: 22px;
+  color: #fff;
+  border-radius: 4px;
+  &:hover, &:focus {
+    
+  }
+  /**
+   * Disabled button
+   */
+  &.disabled {
+    
+  }
+}
+
+/*** primary button ***/
+.btn-primary {
+
+}
+
+/*** mobile button ***/
+.btn-mobile {
+  @media(max-width: 767px) {
+    width: 100%;
+  }
+}
+
+/*** secondary button ***/
+.btn-secondary {
+  background: $color-white;
+  color: $color-black;
+}
+
+/*** anchored button ***/
+.btn-anchored {
+
+}
+
+/*** tertiary button ***/
+.btn-tertiary {
+  background: none;
+  border: 0 none;
+  color: $color-black;
+  min-width: 0;
+  text-decoration: underline;
+}
