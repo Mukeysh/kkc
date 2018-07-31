@@ -50,5 +50,7 @@
   border: 0 none;
   color: $color-black;
   min-width: 0;
+  min-height: auto;
+  line-height: inherit;
   text-decoration: underline;
 }
