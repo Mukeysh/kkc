@@ -10,6 +10,8 @@ import { StepsComponent } from './steps/steps.component';
 import { SelectFingersComponent } from './select-fingers/select-fingers.component';
 import { SelectChocolateComponent } from './select-chocolate/select-chocolate.component';
 import { SelectIngredientsComponent } from './select-ingredients/select-ingredients.component';
+import { CustomizePackagingComponent } from './customize-packaging/customize-packaging.component';
+import { MessageComponent } from './message/message.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { SelectIngredientsComponent } from './select-ingredients/select-ingredie
     StepsComponent,
     SelectFingersComponent,
     SelectChocolateComponent,
-    SelectIngredientsComponent
+    SelectIngredientsComponent,
+    CustomizePackagingComponent,
+    MessageComponent
   ],
   imports: [
     BrowserModule,

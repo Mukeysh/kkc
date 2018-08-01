@@ -1,3 +1,28 @@
-<p>
-  select-ingredients works!
-</p>
+<div class="page-inner">
+  <h4 class="title">Select up to 3 ingredients</h4>
+  <form>
+    <div class="card">
+      <div class="card--content">
+        <input type="checkbox" name="select" id="select4" />
+        <label for="select4"></label>
+        <p>Dried Raspberies</p>
+      </div>
+      <div class="card--content">
+        <input type="checkbox" name="select" id="select8" />
+        <label for="select8"></label>
+        <p class="price">Sticky Caramalised Popcorn</p>
+      </div>
+      <div class="card--content">
+        <input type="checkbox" name="select" id="select" />
+        <label for="select"></label>
+        <p class="price">Crushed Cocoa Nibs</p>
+      </div>
+      <div class="card--content">
+        <input type="checkbox" name="select" id="select1" />
+        <label for="select1"></label>
+        <p class="price">Fragrant Rose Petals</p>
+      </div>
+    </div>
+    <button type="button" [routerLink]="['/cutomize-package']" class="btn btn-mobile btn-primary">Next: Ingredients</button>
+  </form>
+</div>

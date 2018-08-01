@@ -1,3 +1,26 @@
-<p>
-  select-chocolate works!
-</p>
+<div class="page-inner">
+  <h4 class="title">Please select your chocolate</h4>
+  <form>
+    <div class="card card-v">
+      <div class="card--content">
+        <input type="radio" name="select" id="select4" />
+        <label for="select4"></label>
+        <img src="http://via.placeholder.com/50x50" class="img-round" />
+        <p class="text3">Light Chocolate</p>
+      </div>
+      <div class="card--content">
+        <input type="radio" name="select" id="select8" />
+        <label for="select8"></label>
+        <img src="http://via.placeholder.com/50x50" class="img-round" />
+        <p class="text3">Dark Chocolate</p>
+      </div>
+      <div class="card--content">
+        <input type="radio" name="select" id="select" />
+        <label for="select"></label>
+        <img src="http://via.placeholder.com/50x50" class="img-round" />
+        <p class="text3">White Chocolate</p>
+      </div>
+    </div>
+    <button type="button" [routerLink]="['/select-ingredients']" class="btn btn-mobile btn-primary">Next: Chocolate</button>
+  </form>
+</div>
