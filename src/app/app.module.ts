@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule }   from '@angular/forms';
 import { routing } from './app-routing';
 import { OwlModule } from 'ngx-owl-carousel';
 
@@ -13,7 +14,13 @@ import { SelectChocolateComponent } from './select-chocolate/select-chocolate.co
 import { SelectIngredientsComponent } from './select-ingredients/select-ingredients.component';
 import { CustomizePackagingComponent } from './customize-packaging/customize-packaging.component';
 import { MessageComponent } from './message/message.component';
+
 import { ReviewComponent } from './review/review.component';
+
+import { FormDataService }    from './data/formData.service';
+import { WorkflowService }    from './workflow/workflow.service';
+import { NavbarComponent } from './navbar/navbar.component';
+
 
 @NgModule({
   declarations: [
@@ -34,7 +41,9 @@ import { ReviewComponent } from './review/review.component';
     routing,
     OwlModule
   ],
-  providers: [],
+
+  providers:  [{ provide: FormDataService, useClass: FormDataService },
+              { provide: WorkflowService, useClass: WorkflowService }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
