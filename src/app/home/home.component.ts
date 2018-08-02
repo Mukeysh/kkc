@@ -6,7 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
+  slides = [
+    {image:'http://via.placeholder.com/1920x800?text=.', text: 'Sticky caramalised popcorn'},
+    {image:'http://via.placeholder.com/1920x800?text=.', text: 'Text2'},
+  ]
   constructor() { }
 
   ngOnInit() {

@@ -1,19 +1,19 @@
 .icon {
   background: url(../assets/icons.png);
-  height: 50px;
-  width: 58px;
+  height: 25px;
+  width: 30px;
   display: inline-block;
   &.wishlist {
     background-position: 0px 0px;
   }
   &.cart {
-    background-position: -93px 0px;
+    background-position: -48px 0px;
   }
   &.user {
-    background-position: -190px 0px;
+    background-position: -95px 0px;
   }
   &.hamburger {
-    background-position: -290px 0px;
+    background-position: -143px 0px;
   }
 }
 

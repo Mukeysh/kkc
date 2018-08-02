@@ -19,6 +19,10 @@
 .push-multiple {
   .push-multiple--image {
     padding-bottom: 32px;
+    /** needs to remove after getting proper image**/
+    img {
+      width: 50%;
+    }
   }
   h5 {
     padding-bottom: 16px;
