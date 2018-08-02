@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule }   from '@angular/forms';
 import { routing } from './app-routing';
-
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -12,6 +12,9 @@ import { SelectChocolateComponent } from './select-chocolate/select-chocolate.co
 import { SelectIngredientsComponent } from './select-ingredients/select-ingredients.component';
 import { CustomizePackagingComponent } from './customize-packaging/customize-packaging.component';
 import { MessageComponent } from './message/message.component';
+import { FormDataService }    from './data/formData.service';
+import { WorkflowService }    from './workflow/workflow.service';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -24,13 +27,16 @@ import { MessageComponent } from './message/message.component';
     SelectChocolateComponent,
     SelectIngredientsComponent,
     CustomizePackagingComponent,
-    MessageComponent
+    MessageComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     routing
   ],
-  providers: [],
+  providers:    [{ provide: FormDataService, useClass: FormDataService },
+                   { provide: WorkflowService, useClass: WorkflowService }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
